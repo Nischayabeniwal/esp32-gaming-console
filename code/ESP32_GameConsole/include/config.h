@@ -1,0 +1,18 @@
+#pragma once
+
+// ================= BUTTON PINS =================
+#define BTN_UP       33
+#define BTN_DOWN     26
+#define BTN_LEFT     27
+#define BTN_RIGHT    25
+#define BTN_SELECT   32
+
+// ================= OLED CONFIG =================
+#define OLED_SDA     21
+#define OLED_SCL     22
+#define OLED_ADDR    0x3C
+#define OLED_WIDTH   128
+#define OLED_HEIGHT  64
+
+// ================= TIMING =================
+#define INPUT_DEBOUNCE_MS 200
