@@ -7,7 +7,7 @@
 #include "config.h"
 
 // ================= OLED INSTANCE =================
-// Global display object (accessible everywhere)
+// Global display object
 Adafruit_SSD1306 display(OLED_WIDTH, OLED_HEIGHT, &Wire, -1);
 
 // ================= INIT =================
@@ -15,22 +15,22 @@ void initDisplay() {
   Wire.begin(OLED_SDA, OLED_SCL);
 
   if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDR)) {
-    // Hard stop if OLED fails
+    // Hard stop if OLED init fails
     while (true) { delay(100); }
   }
 
-  display.setRotation(2);                 // Required by you
+  display.setRotation(2);                 // LOCKED orientation
   display.setTextColor(SSD1306_WHITE);
   display.clearDisplay();
 
-  // Boot screen (basic test)
+  // Boot test screen
   display.setTextSize(2);
   display.setCursor(10, 20);
   display.println("BOOT OK");
   display.display();
 }
 
-// ================= BASIC HELPERS =================
+// ================= BASIC DRAW HELPERS =================
 void clearScreen() {
   display.clearDisplay();
 }

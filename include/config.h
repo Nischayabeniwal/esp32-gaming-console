@@ -1,6 +1,7 @@
 #pragma once
 
 // ================= BUTTON PINS =================
+// All buttons use INPUT_PULLUP (pressed = LOW)
 #define BTN_UP       33
 #define BTN_DOWN     26
 #define BTN_LEFT     27
