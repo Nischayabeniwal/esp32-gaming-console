@@ -17,3 +17,7 @@
 
 // ================= TIMING =================
 #define INPUT_DEBOUNCE_MS 200
+
+// ================= WIFI =================
+#define WIFI_SSID     "test" // Replace with your SSID 
+#define WIFI_PASSWORD "21222726253332" // Replace with your Password
